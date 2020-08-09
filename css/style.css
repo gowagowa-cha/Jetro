@@ -1,0 +1,368 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+}
+/*Подключение шрифтов*/
+@font-face {
+	font-family: "HelveticaNeue";
+	src: url("../fonts/HelveticaNeue-Regular.woff") format("woff"),
+		url("../fonts/HelveticaNeue-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "HelveticaNeue";
+	src: url("../fonts/HelveticaNeue-Light.woff") format("woff"),
+		url("../fonts/HelveticaNeue-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+/*font-family: 'Bebas', sans-serif;
+font-family: 'HelveticaNeue', sans-serif;*/
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 15px;
+	background: #fff;
+}
+
+.header {
+	background-color: #fff;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	height: 78px;
+	align-items: center;
+}
+
+.header__menu-link {
+	color: #b9b9b9;
+	font-family: "Bebas Neue", cursive;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+
+.header__menu-link:hover {
+	color: #e8663c;
+}
+
+.header__menu-link--active {
+	color: #e8663c;
+}
+
+.header__menu li + li {
+	margin-left: 27px;
+	line-height: 14px;
+}
+
+.slider__item {
+	min-height: 400px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.thumbs div:focus {
+	outline: none;
+}
+.thumbs__item {
+	width: 140px;
+	height: 120px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Ушки слайдера */
+
+.slider {
+	overflow: hidden;
+}
+
+.slider__inner {
+	position: relative;
+}
+
+.slider__inner::before,
+.slider__inner::after {
+	content: "";
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	background-color: rgba(243, 175, 157, 0.8);
+	top: 0;
+}
+
+.slider__inner::before {
+	left: 15px;
+	margin-left: 100%;
+}
+
+.slider__inner::after {
+	right: 15px;
+	margin-right: 100%;
+}
+
+/* слайдер */
+
+.slider__item {
+	margin-bottom: 15px;
+}
+
+.thumbs .slick-slide {
+	max-width: 139px;
+}
+
+.thumbs .slick-track {
+	transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.thumbs .slick-track div + div {
+	margin-left: 15px;
+}
+
+.slider__item {
+	position: relative;
+}
+
+.slider__item-text {
+	position: absolute;
+	width: 410px;
+	min-height: 120px;
+	background-color: rgba(192, 110, 62, 0.6);
+	color: #fff;
+	padding-left: 20px;
+	font-family: "Bebas Neue", cursive;
+	margin-left: 30px;
+	bottom: 30px;
+	padding: 10px;
+}
+
+.slider__title {
+	padding-top: 22px;
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+
+.slider__text {
+	font-family: "HelveticaNeue", sans-serif;
+	font-size: 12px;
+}
+
+/* стрелки */
+
+.slider .slider__arrow {
+	position: absolute;
+	top: 50%;
+	margin: -35px 0 0 0;
+	z-index: 5;
+	width: 40px;
+	height: 70px;
+	border: none;
+	cursor: pointer;
+}
+
+.slider__arrow--prev {
+	left: 20px;
+	background: url("../images/sl-arrow_l.svg") 0 0 / 100% no-repeat;
+	outline: none;
+}
+
+.slider__arrow--next {
+	right: 20px;
+	background: url("../images/sl-arrow_r.svg") 0 0 /100% no-repeat;
+	outline: none;
+}
+
+/* секция с айтемами */
+
+.items {
+	padding: 40px 0 45px;
+}
+
+.items__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item__title,
+.item__title-1,
+.item__title-2 {
+	font-family: "Bebas Neue", cursive;
+	font-size: 18px;
+	line-height: 16px;
+	color: #e8663c;
+	padding-left: 70px;
+	max-width: 250px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.item__title::before {
+	position: absolute;
+	content: "";
+	background: url(../images/icon/icon.svg);
+	background-repeat: no-repeat;
+	width: 46px;
+	height: 48px;
+	top: -7px;
+	left: 0;
+}
+.item__title-1::before {
+	position: absolute;
+	content: "";
+	background: url(../images/icon/icon1.svg);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 48px;
+	top: -7px;
+	left: 0;
+}
+.item__title-2::before {
+	position: absolute;
+	content: "";
+	background: url(../images/icon/icon2.svg);
+	background-repeat: no-repeat;
+	width: 46px;
+	height: 48px;
+	top: -7px;
+	left: 0;
+}
+.item__text {
+	font-family: "HelveticaNeue", sans-serif;
+	font-size: 12px;
+	padding-bottom: 22px;
+	max-width: 280px;
+}
+.item__button {
+	font-family: "Bebas Neue", cursive;
+	font-size: 12px;
+	line-height: 11px;
+	color: #fff;
+	padding: 10px 11px;
+	background-color: #e8663c;
+	display: inline-block;
+}
+
+/* секция с иконками */
+
+.recent__block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.recent__title {
+	font-family: "Bebas Neue", cursive;
+	font-size: 18px;
+	line-height: 16px;
+	color: #e8663c;
+	margin-right: 20px;
+	position: relative;
+	min-width: 100px;
+}
+.block__gray {
+	width: 810px;
+	height: 16px;
+	background-color: #ccc;
+	opacity: 0.5;
+}
+.recent__inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0 48px;
+}
+
+.img {
+	width: 220px;
+	height: 182px;
+	margin-bottom: 0;
+}
+
+.recent__item-inner {
+	padding: 13px 78px 14px 13px;
+	border: 1px solid #ccc;
+	border-top: none;
+	margin-top: -4px;
+	cursor: pointer;
+}
+.recent__item-name {
+	font-family: "Bebas Neue", cursive;
+	font-size: 16px;
+	line-height: 14px;
+	color: #b9b9b9;
+	margin-bottom: 8px;
+}
+.recent__item-date {
+	font-family: "Bebas Neue", cursive;
+	font-size: 11px;
+	line-height: 11px;
+	color: #e8663c;
+}
+
+/* секция футера */
+
+.footer {
+	background-color: rgba(243, 175, 157, 0.8);
+}
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	background-color: #e8663c;
+	padding: 38px 31px 32px 30px;
+	font-family: "HelveticaNeue", sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+
+.footer__item-title {
+	font-family: "Bebas Neue", cursive;
+	font-size: 20px;
+	line-height: 19px;
+	color: #fff;
+	margin-bottom: 27px;
+}
+
+.footer__item-text {
+	width: 262px;
+}
+
+.text-social {
+	color: #f3b29e;
+	cursor: pointer;
+}
+
+.footer__item-email {
+	cursor: pointer;
+}
+.footer__item-phone {
+	cursor: pointer;
+}
+
+.footer__item-social {
+	margin-top: 20px;
+}
+.footer__item-social a {
+	margin-right: 5px;
+	cursor: pointer;
+}

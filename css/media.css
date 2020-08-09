@@ -1,0 +1,252 @@
+@media (max-width: 1500px) {
+	.slider__inner::before,
+	.slider__inner::after {
+		display: none;
+	}
+}
+
+@media (max-width: 960px) {
+	.slider__inner::before,
+	.slider__inner::after {
+		display: none;
+	}
+	.thumbs {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.recent__inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px;
+		flex-wrap: wrap;
+		width: 70%;
+		margin: 0 auto;
+	}
+	.recent__item {
+		margin: 25px;
+	}
+}
+
+@media (max-width: 880px) {
+	.items__inner .item {
+		padding: 10px;
+	}
+	.recent__inner {
+		width: 80%;
+	}
+	.recent__item {
+		margin: 10px;
+	}
+	.footer__inner {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.footer__item {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.footer__item-3 {
+		display: flex;
+		align-items: flex-end;
+	}
+	.footer__item-title {
+		width: 100px;
+	}
+	.footer__item-text-2 {
+		width: 150px;
+	}
+	.contacts-numb {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		margin-top: 11px;
+		margin-left: 10px;
+	}
+	.footer__item-social {
+		margin-left: 35px;
+	}
+	.footer__item-title-3 {
+		align-self: flex-start;
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 780px) {
+	.footer__item {
+		display: flex;
+	}
+	.footer__item-title {
+		padding: 16px;
+	}
+	.footer__item-text {
+		width: 100%;
+	}
+	.footer__item-3 {
+		display: flex;
+		align-items: end;
+	}
+	.footer__item-social {
+		padding-left: 20px;
+		display: contents;
+		flex-wrap: wrap;
+	}
+	.footer__item-social a {
+		margin-left: 10px;
+}
+
+@media (max-width: 720px) {
+	.items__inner {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	.item__title,
+	.item__title-1,
+	.item__title-2 {
+		max-width: 100%;
+	}
+	.item__title::before,
+	.item__title-1::before,
+	.item__title-2::before {
+		top: -20px;
+	}
+	.item__text {
+		max-width: 100%;
+	}
+	.item__button {
+		margin-bottom: 25px;
+	}
+	.recent__inner {
+		width: 90%;
+	}
+}
+@media (max-width: 660px){
+	.footer__inner{
+		padding: 5px;
+	}
+	.footer__item-social {
+		flex-wrap: wrap;
+		display: block;
+}
+@media (max-width: 620px) {
+	.header__menu-link {
+		font-size: 20px;
+	}
+	.header__menu li + li {
+		margin-left: 20px;
+		line-height: 12px;
+	}
+	.slider__item-text {
+		width: 370px;
+	}
+	.recent__inner {
+		width: 100%;
+	}
+}
+
+@media (max-width: 560px) {
+	.recent__inner {
+		display: flex;
+		justify-content: center;
+	}
+}
+@media (max-width: 520px) {
+	.header__menu-link {
+		font-size: 20px;
+	}
+	.header__menu li + li {
+		margin-left: 15px;
+		line-height: 10px;
+	}
+	.slider__item-text {
+		width: 360px;
+	}
+	.footer__item-3{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer__item-title-3 {
+		display: flex;
+		margin: 0 auto;
+		width: 150px;
+	}
+	.contacts-numb{
+		margin: 0 auto;
+	}
+	.footer__item-social{
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 420px) {
+	.header__menu-link {
+		font-size: 16px;
+	}
+	.header__menu li + li {
+		margin-left: 13px;
+		line-height: 10px;
+	}
+	.header__logo img {
+		width: 60px;
+		height: 30px;
+	}
+	.slider__item-text {
+		width: 300px;
+		height: 120px;
+		padding: 10px;
+	}
+	.slider__title {
+		padding-top: 6px;
+		padding-bottom: 9px;
+		font-size: 16px;
+	}
+	.footer__item-social{
+		display: flex;
+		justify-content: space-around;
+		padding-left: 0;
+		margin-top: 5px;
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 360px) {
+	.header__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin-top: 20px;
+		align-items: start;
+	}
+	.slider__item-text {
+		width: 240px;
+		height: 120px;
+		padding: 3px;
+	}
+	.slider__title {
+		padding-top: 6px;
+		padding-bottom: 9px;
+		font-size: 16px;
+	}
+	.footer__item-social{
+		display: flex;
+		justify-content: space-around;
+		margin-left: 16px;
+	}
+	.footer__item-social a{
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 320px) {
+	.footer__item-social{
+		display: flex;
+		justify-content: space-evenly;
+		margin-left: 13px;
+	}
+	.footer__item-social a{
+		margin-left: 0;
+	}
+} 
